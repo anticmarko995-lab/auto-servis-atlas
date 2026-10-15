@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto-servis Novi Beograd | Auto Servis Atlas</title>
+  <meta name="description" content="Dijagnostika, održavanje i popravke vozila u Novom Beogradu. Opišite problem i zatražite termin u Auto Servisu Atlas.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sr_RS">
+  <meta property="og:title" content="Auto-servis Novi Beograd | Auto Servis Atlas">
+  <meta property="og:description" content="Dijagnostika, održavanje i popravke vozila. Zatražite termin i opišite problem pre dolaska.">
+  <meta name="twitter:card" content="summary">
+  <link rel="preload" href="assets/fonts/barlow-condensed-800.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/hero-dijagnostika.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></symbol>
+    <symbol id="icon-sound" viewBox="0 0 24 24"><path d="M4 10h4l5-4v12l-5-4H4zM16 9c1 1 1 5 0 6M19 6c3 3 3 9 0 12"/></symbol>
+    <symbol id="icon-brake" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M4 6C1 9 1 15 4 18M20 6c3 3 3 9 0 12"/></symbol>
+    <symbol id="icon-ignition" viewBox="0 0 24 24"><path d="M5 16c0-4 3-7 7-7s7 3 7 7M8 10 6 7M16 10l2-3M12 9V5"/><path d="m8 18 3-3 2 2 3-3"/></symbol>
+    <symbol id="icon-pulse" viewBox="0 0 24 24"><path d="M4 8h12l4 4v6H5l-3-3v-5h2V8Zm5 5h2l1-3 2 6 1-3h3"/></symbol>
+    <symbol id="icon-fuel" viewBox="0 0 24 24"><path d="M5 21V4h10v17M4 21h13M7 7h6v5H7zM15 8h2l3 3v7a2 2 0 0 1-4 0v-2"/></symbol>
+    <symbol id="icon-warning" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 9v5M12 17h.01"/></symbol>
+    <symbol id="icon-scan" viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/><path d="M7 12h2l1.5-3 3 6 1.5-3h2"/></symbol>
+    <symbol id="icon-service" viewBox="0 0 24 24"><path d="m14 6 4-4 4 4-4 4M16 8 8 16M10 18l-4 4-4-4 4-4M8 16l8-8"/><circle cx="6" cy="18" r="1"/><circle cx="18" cy="6" r="1"/></symbol>
+    <symbol id="icon-rotor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v3M20 12h-3M12 20v-3M4 12h3"/></symbol>
+    <symbol id="icon-suspension" viewBox="0 0 24 24"><path d="M5 4v16M19 4v16M5 8h4l2 3h2l2-3h4M5 16h4l2-3h2l2 3h4"/></symbol>
+    <symbol id="icon-tools" viewBox="0 0 24 24"><path d="M14 5a5 5 0 0 0 6 6l-8 8-4-4 8-8M8 15l-5 5M4 4l5 5M3 3l3 1-2 2-1-3Z"/></symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24"><path d="m5 15 2-6h10l2 6v5H5v-5Z"/><path d="M3 15h18M8 9l1-3h6l1 3M7 20v2M17 20v2"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6.7 3.6 9.2 3l2 4.7-1.7 1.4a15 15 0 0 0 5.4 5.4l1.4-1.7 4.7 2-.6 2.5c-.3 1.5-1.7 2.6-3.2 2.4C10.5 18.9 5.1 13.5 4.3 6.8 4.1 5.3 5.2 3.9 6.7 3.6Z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m4 7 8 6 8-6"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Pređi na sadržaj</a>
+
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Auto Servis Atlas, početna">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-copy"><small>Auto servis</small><strong>Atlas</strong></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span><b>Izbornik</b>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Glavna navigacija">
+        <a href="#usluge">Usluge</a>
+        <a href="#proces">Kako radimo</a>
+        <a href="#oprema">Oprema</a>
+        <a href="#pitanja">Pitanja</a>
+      </nav>
+      <a class="button button-primary nav-cta" href="#zakazivanje">Zakaži servis</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/hero-dijagnostika.webp" alt="" width="1600" height="900" fetchpriority="high">
+      </div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <h1>Jasan servis.<br>Bez nagađanja.</h1>
+          <p>Dijagnostika, redovno održavanje i popravke za vozače iz Beograda.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#zakazivanje">Zakaži servis <svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a class="button button-secondary" href="tel:+381600000000">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.7 3.6 9.2 3l2 4.7-1.7 1.4a15 15 0 0 0 5.4 5.4l1.4-1.7 4.7 2-.6 2.5c-.3 1.5-1.7 2.6-3.2 2.4C10.5 18.9 5.1 13.5 4.3 6.8 4.1 5.3 5.2 3.9 6.7 3.6Z"/></svg>
+              Pozovi servis
+            </a>
+          </div>
+          <p class="approval"><span aria-hidden="true">✓</span> Dodatne radove prvo odobravate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-strip" aria-label="Primer dijagnostičkih očitavanja">
+      <div class="shell status-grid">
+        <div class="status-item">
+          <img class="status-icon" src="assets/status-battery.png" alt="" width="44" height="44" aria-hidden="true">
+          <div><span>Akumulator</span><strong class="seg-display" data-value="12.6" data-digits="3">12.6</strong><em>V</em></div>
+        </div>
+        <div class="status-item">
+          <img class="status-icon" src="assets/status-oil.png" alt="" width="46" height="46" aria-hidden="true">
+          <div><span>Pritisak ulja</span><strong class="seg-display" data-value="3.7" data-digits="3">3.7</strong><em>bar</em></div>
+        </div>
+        <div class="status-item">
+          <img class="status-icon" src="assets/status-temperature.png" alt="" width="46" height="46" aria-hidden="true">
+          <div><span>Temperatura</span><strong class="seg-display" data-value="89" data-digits="3">89</strong><em>°C</em></div>
+        </div>
+        <div class="status-item warning">
+          <img class="status-icon" src="assets/status-engine.png" alt="" width="46" height="46" aria-hidden="true">
+          <div><span>Kodovi grešaka</span><strong class="seg-display" data-value="0" data-digits="3">0</strong><em>aktivnih</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="symptoms section-light" aria-labelledby="symptoms-title">
+      <div class="shell">
+        <div class="section-intro split-intro">
+          <h2 id="symptoms-title">Šta vaš automobil pokušava da kaže?</h2>
+          <p>Ovo su najčešći znaci da je vreme za dijagnostiku. Ako primećujete neki od njih, najbolje je da se vozilo pregleda pre većeg kvara.</p>
+        </div>
+        <div class="symptom-list">
+          <div class="symptom-column">
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-sound"/></svg><strong>Neobični zvukovi</strong><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-brake"/></svg><strong>Slabije kočenje</strong><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-ignition"/></svg><strong>Teže paljenje</strong><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+          <div class="symptom-column">
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-pulse"/></svg><strong>Nestabilan rad motora</strong><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-fuel"/></svg><strong>Povećana potrošnja goriva</strong><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-warning"/></svg><strong>Lampice na instrument tabli</strong><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-dark" id="usluge" aria-labelledby="services-title">
+      <div class="shell services-grid">
+        <div class="services-copy">
+          <div class="section-intro">
+            <h2 id="services-title">Sve što je potrebno da se vratite na put</h2>
+            <p>Od dijagnostike do redovnog održavanja, na jednom mestu.</p>
+          </div>
+          <div class="service-list">
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-scan"/></svg><span>Dijagnostika</span><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-service"/></svg><span>Redovno održavanje</span><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-rotor"/></svg><span>Kočioni sistem</span><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-suspension"/></svg><span>Trap i upravljanje</span><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-pulse"/></svg><span>Elektronika i elektro-sistem</span><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <a href="#zakazivanje"><svg class="row-icon" aria-hidden="true"><use href="#icon-tools"/></svg><span>Ostale popravke</span><svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="services-photo">
+          <img src="assets/pregled-kocnica.webp" alt="Mehaničar pregleda kočioni disk i čeljust" width="1200" height="900" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="process section-light" id="proces" aria-labelledby="process-title">
+      <div class="shell">
+        <div class="section-intro split-intro">
+          <h2 id="process-title">Od prijave do preuzimanja vozila</h2>
+          <p>Jasan proces, bez prećutnih radova.</p>
+        </div>
+        <ol class="process-rail">
+          <li><strong class="seg-display seg-process" data-value="01">01</strong><svg class="process-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg><h3>Prijava</h3><p>Pošaljite podatke o vozilu i opišite problem.</p></li>
+          <li><strong class="seg-display seg-process" data-value="02">02</strong><svg class="process-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg><h3>Dijagnostika</h3><p>Pregledamo vozilo i objašnjavamo nalaz.</p></li>
+          <li><strong class="seg-display seg-process" data-value="03">03</strong><svg class="process-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg><h3>Dogovor i servis</h3><p>Odobravate dodatne radove, zatim sprovodimo servis.</p></li>
+          <li><svg class="process-car" aria-hidden="true"><use href="#icon-car"/></svg><h3>Preuzimanje</h3><p>Vozilo preuzimate spremno za put.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="equipment section-dark" id="oprema" aria-labelledby="equipment-title">
+      <div class="shell equipment-grid">
+        <div class="equipment-copy">
+          <h2 id="equipment-title">Oprema koja pokazuje problem, pre nego što menjamo deo</h2>
+          <p>Koristimo savremenu dijagnostičku i mernu opremu kako bismo precizno utvrdili uzrok kvara i predložili odgovarajuće rešenje.</p>
+        </div>
+        <img src="assets/dijagnosticka-oprema.webp" alt="Dijagnostički ekran pored vozila na uređaju za geometriju trapa" width="1200" height="900" loading="lazy">
+      </div>
+    </section>
+
+    <section class="approval-band section-light" aria-label="Odobrenje radova">
+      <div class="shell approval-grid">
+        <strong><span class="approval-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></span>Dodatne radove prvo odobravate.</strong>
+        <p>Pre dodatnog zahvata objašnjavamo šta je potrebno i tražimo vašu saglasnost.</p>
+      </div>
+    </section>
+
+    <section class="booking" id="zakazivanje" aria-labelledby="booking-title">
+      <div class="shell booking-grid">
+        <div class="booking-heading">
+          <h2 id="booking-title">Zakažite pregled vozila</h2>
+        </div>
+        <p class="booking-helper">Popunite kratku formu i izabraćemo termin koji vam odgovara.</p>
+        <form id="service-form" action="#zakazivanje" method="get" novalidate>
+          <div class="field"><label for="make">Marka</label><select id="make" name="marka" required><option value="">Izaberite marku</option><option>Toyota</option><option>Volkswagen</option><option>Škoda</option><option>Renault</option><option>Opel</option></select></div>
+          <div class="field"><label for="model">Model</label><select id="model" name="model" required><option value="">Izaberite model</option><option>Corolla</option><option>Golf</option><option>Octavia</option><option>Clio</option><option>Astra</option></select></div>
+          <div class="field"><label for="year">Godište</label><select id="year" name="godiste" required><option value="">Godište</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option><option>2019</option><option>2018</option></select></div>
+          <div class="field"><label for="service">Usluga</label><select id="service" name="usluga" required><option value="">Izaberite</option><option>Dijagnostika</option><option>Mali servis</option><option>Veliki servis</option><option>Kočnice</option><option>Vešanje</option><option>Klima-uređaj</option></select></div>
+          <div class="field field-wide"><label for="symptom">Opišite simptom</label><textarea id="symptom" name="simptom" required maxlength="600" placeholder="Kada se problem javlja i šta primećujete?"></textarea></div>
+          <button class="button button-dark" type="submit">Zakaži servis <svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq section-light" id="pitanja" aria-labelledby="faq-title">
+      <div class="shell">
+        <div class="section-intro split-intro faq-intro"><h2 id="faq-title">Česta pitanja</h2><p>Odgovori na najvažnija pitanja naših klijenata.</p></div>
+        <div class="faq-list">
+          <div>
+            <details><summary>Kako mogu da zakažem servis?</summary><p>Pošaljite kratak zahtev kroz formu ili pozovite servis. Termin potvrđujemo nakon provere vrste usluge i raspoloživosti.</p></details>
+            <details><summary>Da li prvo moram da dođem na dijagnostiku?</summary><p>Kada uzrok nije jasan, prvo pregledamo vozilo i zatim predlažemo potrebne radove.</p></details>
+            <details><summary>Da li odobravam dodatne radove?</summary><p>Da. Pre dodatnog zahvata objašnjavamo šta je potrebno i tražimo vaše odobrenje.</p></details>
+          </div>
+          <div>
+            <details><summary>Koliko traje servis?</summary><p>Trajanje zavisi od pregleda, dostupnosti delova i obima radova. Procenu dobijate nakon dijagnostike.</p></details>
+            <details><summary>Da li mogu da sačekam vozilo?</summary><p>Mogućnost čekanja zavisi od vrste usluge i trajanja. Pitajte prilikom potvrde termina.</p></details>
+            <details><summary>Kako da znam šta je tačno urađeno?</summary><p>Prilikom preuzimanja dobijate pregled izvršenih radova i dogovorene informacije o ugrađenim delovima.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location section-dark" aria-labelledby="location-title">
+      <div class="location-grid">
+        <div class="location-copy">
+          <a class="brand location-brand" href="#top" aria-label="Auto Servis Atlas, početna">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="brand-copy"><small>Auto servis</small><strong id="location-title">Atlas</strong></span>
+          </a>
+          <address>
+            <p><svg aria-hidden="true"><use href="#icon-pin"/></svg>Industrijska 18, Novi Beograd</p>
+            <p><svg aria-hidden="true"><use href="#icon-phone"/></svg><a href="tel:+381600000000">060 000 00 00</a></p>
+            <p><svg aria-hidden="true"><use href="#icon-mail"/></svg><a href="mailto:servis@autoservisatlas.rs">servis@autoservisatlas.rs</a></p>
+          </address>
+          <p class="hours">Pon–Pet 08–18<br>Sub 08–14</p>
+          <a class="button button-secondary location-button" href="https://www.google.com/maps/search/?api=1&amp;query=Industrijska+18%2C+Novi+Beograd" target="_blank" rel="noopener noreferrer">Kako da nas pronađete <svg class="icon icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        </div>
+        <figure class="location-image">
+          <iframe
+            class="location-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152337.68967105207!2d20.322416187972816!3d44.80849158769569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa3d7b53fbd%3A0x1db8645cf2177ee4!2z0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1791740814224!5m2!1ssr!2srs"
+            title="Mapa Beograda i lokacija Auto servisa Atlas"
+            width="1200"
+            height="380"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <svg class="location-pin" viewBox="0 0 56 72" aria-hidden="true">
+            <path d="M28 2C13.64 2 2 13.64 2 28c0 19.5 26 42 26 42s26-22.5 26-42C54 13.64 42.36 2 28 2Z"/>
+            <circle cx="28" cy="28" r="9"/>
+          </svg>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <nav aria-label="Navigacija u podnožju"><a href="#usluge">Usluge</a><a href="#proces">Kako radimo</a><a href="#oprema">Oprema</a><a href="#pitanja">Pitanja</a></nav>
+      <a class="brand" href="#top" aria-label="Auto Servis Atlas, početna">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-copy"><small>Auto servis</small><strong>Atlas</strong></span>
+      </a>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" aria-label="Brze radnje">
+    <a href="tel:+381600000000">Pozovi</a>
+    <a href="#zakazivanje">Zakaži servis</a>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
